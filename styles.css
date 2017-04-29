@@ -1,0 +1,54 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Styles for Mobile */
+
+.header {
+    width: 100%;
+}
+
+.header__container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 95%;
+}
+
+.header__container-logoAndCall {
+    background-color: white;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoAndCall__logo {
+    height: 65px;
+    margin-top: 5px;
+}
+
+.logoAndCall__estimateNumber {
+    text-align: center;
+}
+
+.menuX-hamburger {
+    height: 50px;
+}
+
+.menuX-x {
+    height: 50px;
+}
+
+.nav__menu {
+    float: right;
+    list-style-type: none;
+}
+
+/* Styles for iPhone 6S landscape to desktop */
+@media (min-width: 725px) {
+
+}
