@@ -1,21 +1,41 @@
+
+/* General Styles */
+
 body {
     box-sizing: border-box;
+    font-family: sans-serif;
     margin: 0;
 }
 
+#headerView {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /* Styles for Mobile */
+
+#bodyView {
+    margin-top: 76px;
+}
 
 .header {
     width: 100%;
 }
 
-.header__container {
-    margin: 0 auto;
-    max-width: 1140px;
-    width: 95%;
+.header__container1 {
+    background-color: white;
+    width: 100%;
+}
+
+.header__container2 {
+    background-color: black;
+    border-bottom: black 1px solid;
+    width: 100%;
 }
 
 .header__container-logoAndCall {
+    align-items: center;
     background-color: white;
     display: -webkit-box;
     display: -moz-box;
@@ -23,16 +43,51 @@ body {
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 95%;
 }
 
 .logoAndCall__logo {
     height: 65px;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 
 .logoAndCall__estimateNumber {
+    border: black 1px solid;
+    border-radius: 5px;
     text-align: center;
+}
+
+.estimateNumber-freeEstimate {
+    background-color: black;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    padding:5px;
+}
+
+.estimateNumber-phoneNumber {
+    padding:5px;
+}
+
+.estimateNumber-phoneNumber a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.estimateNumber-phoneNumber a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.estimateNumber-phoneNumber a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.estimateNumber-phoneNumber a:active {
+    color: black;
+    text-decoration: none;
 }
 
 .menuX-hamburger {
@@ -43,9 +98,25 @@ body {
     height: 50px;
 }
 
+.header__container-nav {
+    display: none;
+    margin: 0 auto;
+    width: 95%;
+}
+
 .nav__menu {
-    float: right;
+    background-color: black;
+    color: white;
     list-style-type: none;
+    margin: 0;
+    padding: 5px 5px 5px 0;
+    text-align: right;
+    width: 100%;
+}
+
+.nav__menu-item {
+    font-size: 1.2em;
+    margin: 15px 5px;
 }
 
 /* Styles for iPhone 6S landscape to desktop */

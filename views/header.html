@@ -1,23 +1,29 @@
 <div class="header">
-    <div class="header__container">
+    <div class="header__container1">
 
         <div class="header__container-logoAndCall">
+
             <img class="logoAndCall__logo" src="../images/gwi.png" alt="Great Western Logo"/>
-            
+
             <div class="logoAndCall__estimateNumber">
                 <div class="estimateNumber-freeEstimate">
                     Free Estimate:
                 </div>
                 <div class="estimateNumber-phoneNumber">
-                    (801) 555-5555
+                    <a href="tel:8015555555"><strong>(801) 555-5555</strong></a>
                 </div>
             </div>
 
             <div class="header__menuX">
-                <img class="menuX-hamburger" src="../images/hamburger.png" ng-hide="menuOpen"/>
-                <img class="menuX-x" src="../images/close.png" ng-show="menuOpen" />
+                <img class="menuX-hamburger" src="../images/hamburger.png" ng-hide="menuOpen" ng-click="showMenu()"/>
+                <img class="menuX-x" src="../images/close.png" ng-show="menuOpen" ng-click="showMenu()" />
             </div>
+
         </div>
+
+    </div>
+
+    <div class="header__container2">
 
         <div class="header__container-nav">
             <ul class="nav__menu">
@@ -29,4 +35,5 @@
         </div>
 
     </div>
+
 </div>
