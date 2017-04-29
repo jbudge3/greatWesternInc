@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="greatWestern">
+    <head>
+        <meta charset="utf-8">
+        <title>Great Western Inc.</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+<body>
+    <main>
+        <div ui-view="header"></div>
+        <div ui-view="body"></div>
+        <div ui-view="footer"></div>
+    </main>
+
+    <!-- JavaScript files pulled from CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <!-- Local scripts -->
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/controllers/headerCtrl.js"></script>
+    <script type="text/javascript" src="./js/controllers/footerCtrl.js"></script>
+    <script type="text/javascript" src="./js/controllers/homeCtrl.js"></script>
+</body>
+</html>
