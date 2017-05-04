@@ -1,5 +1,5 @@
 
-/* General Styles */
+/* General Styles /////////////////////////////////////////////////////////////////*/
 
 body {
     box-sizing: border-box;
@@ -13,11 +13,13 @@ body {
     width: 100%;
 }
 
-/* Styles for Mobile */
+/* Styles for Mobile /////////////////////////////////////////////////////////////////*/
 
 #bodyView {
     margin-top: 76px;
 }
+
+/* Styles for Header //////////*/
 
 .header {
     width: 100%;
@@ -101,6 +103,7 @@ body {
 .header__container-nav {
     display: none;
     margin: 0 auto;
+    max-width: 1140px;
     width: 95%;
 }
 
@@ -119,7 +122,24 @@ body {
     margin: 15px 5px;
 }
 
-/* Styles for iPhone 6S landscape to desktop */
+/* Styles for size from iPhone 6S landscape to desktop /////////////////////////////////////////////////////////////////*/
 @media (min-width: 725px) {
+    /* Styles for Header //////////*/
+    .header__menuX {
+        display: none;
+    }
 
+    .logoAndCall__logo {
+        height: 115px;
+    }
+
+    .header__container-nav {
+        display: inline-block;
+    }
+
+    .nav__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
