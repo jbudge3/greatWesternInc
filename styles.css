@@ -17,6 +17,8 @@ body {
 
 #bodyView {
     margin-top: 76px;
+    max-width: 1140px;
+    width: 95%;
 }
 
 /* Styles for Header //////////*/
@@ -31,7 +33,11 @@ body {
 }
 
 .header__container2 {
-    background-color: black;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #494949); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #494949); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #494949); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #494949); /* Standard syntax */
     border-bottom: black 1px solid;
     width: 100%;
 }
@@ -108,7 +114,11 @@ body {
 }
 
 .nav__menu {
-    background-color: black;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #494949); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #494949); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #494949); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #494949); /* Standard syntax */
     color: white;
     list-style-type: none;
     margin: 0;
@@ -122,9 +132,40 @@ body {
     margin: 15px 5px;
 }
 
+.nav__menu-item a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__menu-item a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__menu-item a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__menu-item a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.header__whiteLine {
+    display: none;
+}
+
 /* Styles for size from iPhone 6S landscape to desktop /////////////////////////////////////////////////////////////////*/
-@media (min-width: 725px) {
+@media (min-width: 740px) {
+    /* General Styles /////////////////////////////////////////////////////////////////*/
+
+    #bodyView {
+        margin: 185px auto 0 auto;
+    }
+
     /* Styles for Header //////////*/
+
     .header__menuX {
         display: none;
     }
@@ -133,13 +174,36 @@ body {
         height: 115px;
     }
 
+    .header__container2 {
+        text-align: center;
+    }
+
     .header__container-nav {
         display: inline-block;
     }
 
     .nav__menu {
         display: flex;
-        justify-content: space-between;
+        height: 35px;
+        justify-content: space-around;
         align-items: center;
+    }
+
+    .header__whiteTriangle {
+        height: 0;
+        width: 0;
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-bottom: solid 7px white;
+        margin-top: -7px;
+        position: relative;
+    }
+
+    .header__whiteLine {
+        background: white;
+        border-style: none;
+        display: block;
+        height: 5px;
+        margin: 0;
     }
 }
