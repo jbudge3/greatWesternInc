@@ -23,6 +23,18 @@ body {
 
 /* Styles for Header //////////*/
 
+@@keyframes hideShowHeader {
+    from {margin-top: 0;}
+    to {margin-top: -125px;}
+}
+
+.headroom--pinned {
+    margin-top: 0;
+}
+.headroom--unpinned {
+    margin-top: -125px;
+}
+
 .header {
     width: 100%;
 }
@@ -30,6 +42,10 @@ body {
 .header__container1 {
     background-color: white;
     width: 100%;
+    -webkit-transition: margin-top 500ms; /* Safari */
+    -moz-transition: margin-top 500ms;
+    -o-transition: margin-top 500ms;
+    transition: margin-top 500ms;
 }
 
 .header__container2 {

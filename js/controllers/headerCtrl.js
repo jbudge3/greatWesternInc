@@ -8,16 +8,21 @@ angular.module('greatWestern').controller('headerCtrl', function($scope) {
     }
 
     $scope.positionTriangle = function() {
-        var currentPath = window.location.pathname;
+        var currentPath = window.location.hash;
         var targetLink = '';
 
-        switch(currentPath) {
-            case '/':
+        switch (currentPath) {
+            case '#/':
                 targetLink = '.js-home';
+                break;
+            case '#/gallery':
+                targetLink = '.js-gallery';
                 break;
             default:
                 //Have a party!
         }
+
+        console.log(currentPath);
 
         var posLeft = $(targetLink).position().left - 3;
         var halfWidth = $(targetLink).outerWidth() / 2;
@@ -27,10 +32,17 @@ angular.module('greatWestern').controller('headerCtrl', function($scope) {
         }, 100);
     }
 
-    $scope.positionTriangle();
+    $(document).ready(function() {
+        $scope.positionTriangle();
+    });
+
 
     $(window).resize(function() {
         $scope.positionTriangle();
     });
+
+    var myElement = document.querySelector(".header__container1");
+    var headroom  = new Headroom(myElement);
+    headroom.init();
 
 });
