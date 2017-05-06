@@ -27,9 +27,7 @@ angular.module('greatWestern').controller('headerCtrl', function($scope) {
         var posLeft = $(targetLink).position().left - 3;
         var halfWidth = $(targetLink).outerWidth() / 2;
 
-        $('.header__whiteTriangle').animate({
-            left: (posLeft + halfWidth) + "px"
-        }, 100);
+        $('.header__whiteTriangle').css('left', (posLeft + halfWidth) + "px");
     }
 
     $(document).ready(function() {
