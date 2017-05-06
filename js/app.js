@@ -5,7 +5,7 @@ angular.module('greatWestern', ['ui.router'])
                 url: '/',
                 views: {
                     header: {
-                        templateUrl: '../views/header.html',
+                        templateUrl: './views/header.html',
                         controller: 'headerCtrl'
                     },
                     body: {
