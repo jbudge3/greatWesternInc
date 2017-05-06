@@ -29,7 +29,7 @@ angular.module('greatWestern').controller('headerCtrl', function($scope) {
 
         $('.header__whiteTriangle').css('left', (posLeft + halfWidth) + "px");
     }
-
+    // Position the white triangle on the menu when the page is finished laoding
     $(document).ready(function() {
         $scope.positionTriangle();
     });
