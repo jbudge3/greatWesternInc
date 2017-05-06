@@ -9,11 +9,11 @@ angular.module('greatWestern', ['ui.router'])
                         controller: 'headerCtrl'
                     },
                     body: {
-                        templateUrl: '../views/home.html',
+                        templateUrl: './views/home.html',
                         controller: 'homeCtrl'
                     },
                     footer: {
-                        templateUrl: '../views/footer.html',
+                        templateUrl: './views/footer.html',
                         controller: 'footerCtrl'
                     }
                 }
@@ -21,15 +21,15 @@ angular.module('greatWestern', ['ui.router'])
                 url: '/gallery',
                 views: {
                     header: {
-                        templateUrl: '../views/header.html',
+                        templateUrl: './views/header.html',
                         controller: 'headerCtrl'
                     },
                     body: {
-                        templateUrl: '../views/gallery.html',
+                        templateUrl: './views/gallery.html',
                         controller: 'galleryCtrl'
                     },
                     footer: {
-                        templateUrl: '../views/footer.html',
+                        templateUrl: './views/footer.html',
                         controller: 'footerCtrl'
                     }
                 }
