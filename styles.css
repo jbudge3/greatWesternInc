@@ -11,12 +11,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10000000;
 }
 
 /* Styles for Mobile /////////////////////////////////////////////////////////////////*/
 
 #bodyView {
-    margin-top: 76px;
+    margin-top: 95px;
     max-width: 1140px;
     width: 95%;
 }
@@ -170,6 +171,25 @@ body {
 
 .header__whiteLine {
     display: none;
+}
+
+/* Styles for Home ////////////////////////*/
+
+.homeContainer__carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel__image {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.slick-dots {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0 200px;
 }
 
 /* Styles for size from iPhone 6S landscape to desktop /////////////////////////////////////////////////////////////////*/
