@@ -13,9 +13,12 @@ angular.module('greatWestern').controller('homeCtrl', function($scope) {
 
         if ($(window).width() < 740) {
             $('.homeContainer__carousel').hide();
+            $('.logoAndCall__logo').attr('src', './images/gwi-mobile.png');
         } else {
             $('.homeContainer__mainImageContainer').hide();
         }
+
+        $('.slick-dots').find('button').text('');
     });
-    
+
 });
