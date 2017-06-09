@@ -10,5 +10,12 @@ angular.module('greatWestern').controller('homeCtrl', function($scope) {
         autoplayspeed: 2000,
         mobileFirst: true
         });
+
+        if ($(window).width() < 740) {
+            $('.homeContainer__carousel').hide();
+        } else {
+            $('.homeContainer__mainImageContainer').hide();
+        }
     });
+    
 });
